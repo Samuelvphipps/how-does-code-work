@@ -86,3 +86,23 @@ let canAnnieDrink=canTheyDrink({
 console.log('can annie drink?', canAnnieDrink);
 
 //lesson, you can make new object for the parameter of the function and that will serve as the parameter for 'human'
+
+
+//TALKING ABOUT CODE
+/*
+Words we use to talk about tech:
+*/
+//creating a function called is word silly with 'aWord' as a parameter
+function isWordSilly(aWord) {
+    //We create a variable/array named sillyWords in the function with an array of strings.
+    let sillyWords = ['squeegee', 'barnacle', 'barbecue', 'quagmire', 'bog', 'loofah'];
+    //Use a for loop to check if the parameter or word put into function, matches any words on the silly word array.
+    for (let oneSillyWord of sillyWords){
+      //If the input word matches a word in the sillyWords array, function returns true.
+        if (oneSillyWord === aWord) {
+        return true;
+      }
+    }
+    //If the loop doesnt find a match, then the function returns false.
+    return false;
+  } 
